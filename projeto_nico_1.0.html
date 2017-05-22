@@ -4,25 +4,66 @@
 
 <script type="text/javascript">
 
-	function pulaLinha() {
+function pula1Linha() {
 
-		document.write("<br>")
-		document.write("<br>")
-		document.write("<br>")
+		document.write("<br>");
+		
+		}
+	
+	
+function pula2Linhas() {
+
+		document.write("<br>");
+		document.write("<br>");
 
 		}
+	
+function pula3Linhas() {
 
-	var volumeElipseMilimetros = 0.52/1000
-	var d1UteroMilimetros = 30
-	var d2UteroMilimetros = 30
-	var d3UteroMilimetros = 30
-	var volumeUteroMilimetros = d1UteroMilimetros * d2UteroMilimetros * d3UteroMilimetros * volumeElipseMilimetros
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		
+		}
+	
+
+function mostraTitulo(titulo) {
+
+		document.write("<h1>" + titulo +  "</h1>");	
+		pula3Linhas()
+
+}
+	
+function mostraFrase(frase) {
+
+		document.write("<p>" + frase + "</p>");	
+		pula1Linha()
+	
+}
 
 
-document.write("O volume do útero é " + (volumeUteroMilimetros.toFixed(2)) + " cm3")
-pulaLinha()
-document.write("teste")
+var volumeElipseMilimetros = 
+var d1UteroMilimetros = 
+var d2UteroMilimetros = 
+var d3UteroMilimetros = 
+var volumeUteroMilimetros = d1UteroMilimetros * d2UteroMilimetros * d3UteroMilimetros * volumeElipseMilimetros
+	
+// -------------------------------------------------------------------------------------------------------------------------------
 
+mostraTitulo("ULTRASSONOGRAFIA DO APARELHO URINÁRIO")
+
+mostraFrase("Rim direito em topografia, morfologia, dimensões, contornos e ecotextura normais.")
+Rim direito em topografia, morfologia, dimensões, contornos e ecotextura normais.
+Sistema pielocalicial compacto.
+Não visibilizado imagens compatíveis com cálculos no sistema pielocalicial.
+
+Rim esquerdo em topografia, morfologia, dimensões, contornos e ecotextura normais.
+Sistema pielocalicial compacto.
+Não visibilizado imagens compatíveis com cálculos no sistema pielocalicial.
+
+Bexiga de capacidade e contornos normais.
+
+OPINIÃO:
+-Achados ultrassonográficos dentro dos padrões da normalidade.")
 
 </script>
-
