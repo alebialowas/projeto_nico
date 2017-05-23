@@ -25,15 +25,8 @@ function pula3Linhas() {
 		
 		}
 	
-function mostraTitulo(titulo) {
-		
-		document.write("<h1>" + titulo +  "</h1>");	
-		pula3Linhas()
-
-}
-	
 function mostraFrase(frase) {
-		document.write("<p>" + frase + "</p>");	
+		document.write(frase);	
 		pula1Linha()
 	
 }
@@ -44,11 +37,18 @@ function calculaVolumeMilimetros (d1, d2, d3) {
 		var volumeMilimetrosParaCentimetros = (volumeMilimetros/1000).toFixed(1)
 		mostraFrase (volumeMilimetrosParaCentimetros)
 }
+
+function calculaVolumeCentimetros (d1, d2, d3) {
+
+		var volumeCentimetros = ((d1 * d2 * d3)*0.52).toFixed(1)		
+		mostraFrase (volumeCentimetros)
+}
 	
 	
 // -------------------------------------------------------------------------------------------------------------------------------
 
-calculaVolumeMilimetros (33, 15, 12)
+calculaVolumeCentimetros (3.3, 1.5, 1.2)
 
+calculaVolumeMilimetros (33, 15, 12)
 
 </script>
