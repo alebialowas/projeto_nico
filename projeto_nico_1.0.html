@@ -36,18 +36,20 @@ function calculaVolumeMilimetros (d1, d2, d3) {
 		var volumeMilimetros = (d1 * d2 * d3)*0.52
 		var volumeMilimetrosParaCentimetros = (volumeMilimetros/1000).toFixed(1)
 		mostraFrase (volumeMilimetrosParaCentimetros)
+
 }
 
 function calculaVolumeCentimetros (d1, d2, d3) {
 
 		var volumeCentimetros = ((d1 * d2 * d3)*0.52).toFixed(1)		
-		mostraFrase (volumeCentimetros)
+		return volumeCentimetros
+
 }
 	
 	
 // -------------------------------------------------------------------------------------------------------------------------------
 
-calculaVolumeCentimetros (3.3, 1.5, 1.2)
+mostraFrase("O volume do útero é " + calculaVolumeCentimetros (3.3, 1.5, 1.2) + " cm3") 
 
 calculaVolumeMilimetros (33, 15, 12)
 
