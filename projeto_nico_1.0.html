@@ -30,22 +30,27 @@ function mostraFrase(frase) {
 		pula1Linha()
 	
 }
-
-function calculaVolumeMilimetros (d1, d2, d3) {
-		var volumeMilimetros = (d1 * d2 * d3)*0.52
-		var volumeMilimetrosParaCentimetros = (volumeMilimetros/1000).toFixed(1)
-		return volumeMilimetrosParaCentimetros
+function calculaVolumeMm (d1, d2, d3) {
+		var volumeMm = (d1 * d2 * d3)*0.52
+		var volumeMmParaCm = (volumeMm/1000).toFixed(1)
+		return volumeMmParaCm
 }
 
-function calculaVolumeCentimetros (d1, d2, d3) {
-		var volumeCentimetros = ((d1 * d2 * d3)*0.52).toFixed(1)		
-		return volumeCentimetros
+function calculaVolumeCm (d1, d2, d3) {
+		var volumeCm = ((d1 * d2 * d3)*0.52).toFixed(1)		
+		return volumeCm
 }
-	
-	
+
+
+var diametroLongitudinalUtero = prompt("Qual o diâmetro longitudinal do Útero em milímetros?")
+var diametroAnteroPosteriorUtero = prompt("Qual o diâmetro antero-posterior do Útero em milímetros?")	
+var diametroTransversoUtero = prompt("Qual o diâmetro transverso do Útero em milímetros?")	
+var VolumeUteroMm = calculaVolumeMm(diametroLongitudinalUtero, diametroAnteroPosteriorUtero, diametroTransversoUtero)
+
+
 // -------------------------------------------------------------------------------------------------------------------------------
-mostraFrase("O volume do útero com medidas em centimetros é " + calculaVolumeCentimetros (3.3, 1.5, 1.2) + " cm3") 
 
-mostraFrase("O volume do útero com medidas em milimetros é " + calculaVolumeMilimetros (33, 15, 12) + " cm3") 
+mostraFrase ("O volume do Útero é " + VolumeUteroMm + " cm3.")
+
 
 </script>
