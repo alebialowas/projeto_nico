@@ -28,7 +28,7 @@ function pula3Linhas() {
 	
 function mostraFrase(frase) {
 		document.write(frase);	
-		pula1Linha();
+		
 	
 }
 function calculaVolumeMm (d1, d2, d3) {
@@ -42,19 +42,17 @@ function calculaVolumeCm (d1, d2, d3) {
 		return volumeCm;
 }
 
+function volumeUteroMm () {
 
 var diametroLongitudinalUteroMm = prompt("Qual o diâmetro longitudinal do Útero em milímetros?");
 var diametroAnteroPosteriorUteroMm = prompt("Qual o diâmetro antero-posterior do Útero em milímetros?");	
 var diametroTransversoUteroMm = prompt("Qual o diâmetro transverso do Útero em milímetros?");	
-var VolumeUteroMm = calculaVolumeMm(diametroLongitudinalUteroMm, diametroAnteroPosteriorUteroMm, diametroTransversoUteroMm);
+var volumeUteroMm = calculaVolumeMm(diametroLongitudinalUteroMm, diametroAnteroPosteriorUteroMm, diametroTransversoUteroMm);
+mostraFrase (volumeUteroMm)
 
-
-
-
-
+}
 // -------------------------------------------------------------------------------------------------------------------------------
 
-mostraFrase ("O volume do Útero é " + VolumeUteroMm + " cm3.")
-
+mostraFrase("O volume do úetero é ") + volumeUteroMm () + mostraFrase(" cm3.")
 
 </script>
