@@ -42,10 +42,17 @@ function calculaVolumeCm (d1, d2, d3) {
 }
 
 
-var diametroLongitudinalUtero = prompt("Qual o diâmetro longitudinal do Útero em milímetros?")
-var diametroAnteroPosteriorUtero = prompt("Qual o diâmetro antero-posterior do Útero em milímetros?")	
-var diametroTransversoUtero = prompt("Qual o diâmetro transverso do Útero em milímetros?")	
+var diametroLongitudinalUteroMm = prompt("Qual o diâmetro longitudinal do Útero em milímetros?")
+var diametroAnteroPosteriorUteroMm = prompt("Qual o diâmetro antero-posterior do Útero em milímetros?")	
+var diametroTransversoUteroMm = prompt("Qual o diâmetro transverso do Útero em milímetros?")	
 var VolumeUteroMm = calculaVolumeMm(diametroLongitudinalUtero, diametroAnteroPosteriorUtero, diametroTransversoUtero)
+
+
+var diametroLongitudinalUteroCm = prompt("Qual o diâmetro longitudinal do Útero em milímetros?")
+var diametroAnteroPosteriorUteroCm = prompt("Qual o diâmetro antero-posterior do Útero em milímetros?")	
+var diametroTransversoUteroCm = prompt("Qual o diâmetro transverso do Útero em milímetros?")	
+var VolumeUteroCm = calculaVolumeMm(diametroLongitudinalUtero, diametroAnteroPosteriorUtero, diametroTransversoUtero)
+
 
 
 // -------------------------------------------------------------------------------------------------------------------------------
