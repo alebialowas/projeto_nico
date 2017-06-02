@@ -3,6 +3,7 @@
 
 
 <script type="text/javascript">
+
 function pula1Linha() {
 		
 		document.write("<br>");
@@ -27,31 +28,31 @@ function pula3Linhas() {
 	
 function mostraFrase(frase) {
 		document.write(frase);	
-		pula1Linha()
+		pula1Linha();
 	
 }
 function calculaVolumeMm (d1, d2, d3) {
 		var volumeMm = (d1 * d2 * d3)*0.52
-		var volumeMmParaCm = (volumeMm/1000).toFixed(1)
-		return volumeMmParaCm
+		var volumeMmParaCm = (volumeMm/1000).toFixed(1);
+		return volumeMmParaCm;
 }
 
 function calculaVolumeCm (d1, d2, d3) {
-		var volumeCm = ((d1 * d2 * d3)*0.52).toFixed(1)		
-		return volumeCm
+		var volumeCm = ((d1 * d2 * d3)*0.52).toFixed(1);		
+		return volumeCm;
 }
 
 
-var diametroLongitudinalUteroMm = prompt("Qual o diâmetro longitudinal do Útero em milímetros?")
-var diametroAnteroPosteriorUteroMm = prompt("Qual o diâmetro antero-posterior do Útero em milímetros?")	
-var diametroTransversoUteroMm = prompt("Qual o diâmetro transverso do Útero em milímetros?")	
-var VolumeUteroMm = calculaVolumeMm(diametroLongitudinalUtero, diametroAnteroPosteriorUtero, diametroTransversoUtero)
+var diametroLongitudinalUteroMm = prompt("Qual o diâmetro longitudinal do Útero em milímetros?");
+var diametroAnteroPosteriorUteroMm = prompt("Qual o diâmetro antero-posterior do Útero em milímetros?");	
+var diametroTransversoUteroMm = prompt("Qual o diâmetro transverso do Útero em milímetros?");	
+var VolumeUteroMm = calculaVolumeMm(diametroLongitudinalUteroMm, diametroAnteroPosteriorUteroMm, diametroTransversoUteroMm);
 
 
-var diametroLongitudinalUteroCm = prompt("Qual o diâmetro longitudinal do Útero em milímetros?")
-var diametroAnteroPosteriorUteroCm = prompt("Qual o diâmetro antero-posterior do Útero em milímetros?")	
-var diametroTransversoUteroCm = prompt("Qual o diâmetro transverso do Útero em milímetros?")	
-var VolumeUteroCm = calculaVolumeMm(diametroLongitudinalUtero, diametroAnteroPosteriorUtero, diametroTransversoUtero)
+var diametroLongitudinalUteroCm = prompt("Qual o diâmetro longitudinal do Útero em milímetros?");
+var diametroAnteroPosteriorUteroCm = prompt("Qual o diâmetro antero-posterior do Útero em milímetros?");	
+var diametroTransversoUteroCm = prompt("Qual o diâmetro transverso do Útero em milímetros?");
+var VolumeUteroCm = calculaVolumeMm(diametroLongitudinalUteroCm, diametroAnteroPosteriorUteroCm, diametroTransversoUteroCm);
 
 
 
