@@ -50,9 +50,20 @@ var diametroTransversoUteroMm = prompt("Qual o diâmetro transverso do Útero em
 var volumeUteroMm = calculaVolumeMm(diametroLongitudinalUteroMm, diametroAnteroPosteriorUteroMm, diametroTransversoUteroMm);
 mostraFrase (volumeUteroMm)
 
+
+}
+
+function volumeUteroCm () {
+
+var diametroLongitudinalUteroCm = prompt("Qual o diâmetro longitudinal do Útero em centímetros?");
+var diametroAnteroPosteriorUteroCm = prompt("Qual o diâmetro antero-posterior do Útero em centímetros?");	
+var diametroTransversoUteroCm = prompt("Qual o diâmetro transverso do Útero em centímetros?");	
+var volumeUteroCm = calculaVolumeCm(diametroLongitudinalUteroCm, diametroAnteroPosteriorUteroCm, diametroTransversoUteroCm);
+mostraFrase (volumeUteroCm)
+
 }
 // -------------------------------------------------------------------------------------------------------------------------------
 
-mostraFrase("O volume do úetero é ") + volumeUteroMm () + mostraFrase(" cm3.")
+mostraFrase("O volume do úetero é ") + volumeUteroMm() + mostraFrase(" cm3.")
 
 </script>
